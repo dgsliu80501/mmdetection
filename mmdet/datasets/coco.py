@@ -54,24 +54,12 @@ class CocoDataset(BaseDetDataset):
         }"""
     METAINFO = {
         'classes':
-        ('unlabeled', 'dynamic', 'ego vehicle', 'ground', 'static', 'parking',
-         'rail track', 'road', 'sidewalk', 'bridge', 'building', 'fence',
-         'garage', 'guard rail', 'tunnel', 'wall', 'banner', 'billboard',
-         'lane divider', 'parking sign', 'pole', 'polegroup', 'street light',
-         'traffic cone', 'traffic device', 'traffic light', 'traffic sign',
-         'traffic sign frame', 'terrain', 'vegetation', 'sky', 'person',
-         'rider', 'bicycle', 'bus', 'car', 'caravan', 'motorcycle',
-         'trailer', 'train', 'truck'),
+        ('pedestrian', 'rider', 'car', 'bus', 'truck', 'bicycle', 'motorcycle',
+         'train', 'traffic light', 'traffic sign'),
         'palette':
-        [(0, 0, 0), (111, 74, 0), (0, 0, 0), (81, 0, 81), (0, 0, 0), (250, 170, 160),
-         (230, 150, 140), (128, 64, 128), (244, 35, 232), (150, 100, 100),
-         (70, 70, 70), (190, 153, 153), (180, 100, 180), (180, 165, 180),
-         (255, 165, 0), (150, 120, 90), (102, 102, 156), (250, 170, 100), (220, 220, 250),
-         (220, 20, 60), (153, 153, 153), (153, 153, 153), (220, 220, 100),
-         (255, 70, 0), (220, 220, 220),  (250, 170, 30), (220, 220, 0),
-         (250, 170, 250), (152, 251, 152), (107, 142, 35), (70, 130, 180),
-         (220, 20, 60), (255, 0, 0), (119, 11, 32), (0, 60, 100), (0, 0, 142),
-         (0, 0, 90), (0, 0, 230), (0, 0, 110), (0, 80, 100), (0, 0, 70)]
+        [(220, 20, 60), (255, 0, 0), (0, 0, 142), (0, 60, 100),
+         (0, 0, 70), (119, 11, 32), (0, 0, 230), (0, 80, 100),
+         (250, 170, 30), (220, 220, 0)]
     }
     COCOAPI = COCO
     # ann_id is unique in coco dataset.
