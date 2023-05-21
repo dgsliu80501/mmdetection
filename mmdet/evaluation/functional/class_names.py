@@ -71,14 +71,8 @@ def imagenet_vid_classes() -> list:
 
 def coco_classes() -> list:
     """Class names of COCO."""
-    return ['unlabeled', 'dynamic', 'ego vehicle', 'ground', 'static', 'parking',
-         'rail track', 'road', 'sidewalk', 'bridge', 'building', 'fence',
-         'garage', 'guard rail', 'tunnel', 'wall', 'banner', 'billboard',
-         'lane divider', 'parking sign', 'pole', 'polegroup', 'street light',
-         'traffic cone', 'traffic device', 'traffic light', 'traffic sign',
-         'traffic sign frame', 'terrain', 'vegetation', 'sky', 'person',
-         'rider', 'bicycle', 'bus', 'car', 'caravan', 'motorcycle',
-         'trailer', 'train', 'truck']
+    return ['pedestrian', 'rider', 'car', 'bus', 'truck', 'bicycle', 'motorcycle',
+         'train', 'traffic light', 'traffic sign']
     """[
         'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train',
         'truck', 'boat', 'traffic_light', 'fire_hydrant', 'stop_sign',
