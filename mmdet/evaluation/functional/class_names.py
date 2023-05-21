@@ -71,7 +71,15 @@ def imagenet_vid_classes() -> list:
 
 def coco_classes() -> list:
     """Class names of COCO."""
-    return [
+    return ['unlabeled', 'dynamic', 'ego vehicle', 'ground', 'static', 'parking',
+         'rail track', 'road', 'sidewalk', 'bridge', 'building', 'fence',
+         'garage', 'guard rail', 'tunnel', 'wall', 'banner', 'billboard',
+         'lane divider', 'parking sign', 'pole', 'polegroup', 'street light',
+         'traffic cone', 'traffic device', 'traffic light', 'traffic sign',
+         'traffic sign frame', 'terrain', 'vegetation', 'sky', 'person',
+         'rider', 'bicycle', 'bus', 'car', 'caravan', 'motorcycle',
+         'trailer', 'train', 'truck']
+    """[
         'person', 'bicycle', 'car', 'motorcycle', 'airplane', 'bus', 'train',
         'truck', 'boat', 'traffic_light', 'fire_hydrant', 'stop_sign',
         'parking_meter', 'bench', 'bird', 'cat', 'dog', 'horse', 'sheep',
@@ -85,7 +93,7 @@ def coco_classes() -> list:
         'laptop', 'mouse', 'remote', 'keyboard', 'cell_phone', 'microwave',
         'oven', 'toaster', 'sink', 'refrigerator', 'book', 'clock', 'vase',
         'scissors', 'teddy_bear', 'hair_drier', 'toothbrush'
-    ]
+    ]"""
 
 
 def coco_panoptic_classes() -> list:
