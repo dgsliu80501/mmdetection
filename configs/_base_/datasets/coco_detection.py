@@ -34,7 +34,7 @@ test_pipeline = [
                    'scale_factor'))
 ]
 train_dataloader = dict(
-    batch_size=2,
+    batch_size=1,
     num_workers=2,
     persistent_workers=True,
     sampler=dict(type='DefaultSampler', shuffle=True),
@@ -57,7 +57,7 @@ val_dataloader = dict(
         type=dataset_type,
         data_root=data_root,
         ann_file='COCO/val_coco.json',
-        data_prefix=dict(img='bdd100k/images/100k/train/'),
+        data_prefix=dict(img='bdd100k/images/100k/val/'),
         test_mode=True,
         pipeline=test_pipeline,
         backend_args=backend_args))
